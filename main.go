@@ -31,9 +31,9 @@ func parseUint64(hexString string) (uint64, error) {
 func parseMagneticStatus(hex string) (string, error) {
 	switch hex {
 	case "00":
-		return "close", nil
+		return "Close", nil
 	case "01":
-		return "open", nil
+		return "Open", nil
 	default:
 		return "", fmt.Errorf("unexpected value")
 	}
@@ -98,5 +98,5 @@ func main() {
 		log.Fatalf("%v", err)
 	}
 
-	fmt.Printf("%#v\n", *result)
+	fmt.Printf("Temparature: %v C\nHumidity: %v%%\nMagneticStatus: %v", result.Temperature, result.Humidity, result.MagneticStatus)
 }
