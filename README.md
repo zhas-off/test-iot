@@ -5,7 +5,7 @@
 Клонировать сам проект
 
 ```bash
-  git clone [https://github.com/zhas-off/test-task.git](https://github.com/zhas-off/test-iot.git)
+  git clone https://github.com/zhas-off/test-task.git
 ```
 
 Перейти в директорию проекта
